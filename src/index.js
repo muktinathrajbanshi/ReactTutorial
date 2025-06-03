@@ -1,16 +1,20 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-const fname = "muktinath";
-const lname = "rajbanshi";
+const name = "muktinath";
+const date = new Date().toLocaleDateString();
+const time = new Date().toLocaleTimeString();
+
 
 ReactDOM.render(
 
   <>
-  <h1> {`my name is ${fname} and my last name is ${lname}`}</h1>
-  <p> My lucky number is {7+2} </p>
+  <h1>Hello, My name is {name}</h1>
+   <p>Current Date is = {date}</p>
+    <p>Current Time is = {time}</p>
 
   </>,
-  document.getElementById("root")
+
+ document.getElementById("root")
 
 );
