@@ -3,20 +3,20 @@ import ReactDOM from "react-dom";
 
 
 ReactDOM.render(
-    <>
-    <h1>Hello World!!</h1>
-    <p>Please Like and Share </p>
-    <h2>Please Subscribe my channel</h2>
-    </>,
-    // [
-    // <h1>Hello World!!</h1>,
-    // <p>Please Like and Share Too </p>,
-    // <h2>Please Subscribe my channel</h2>,
-    // ],
+  <>
+
+  <h1>Muktinath Tech Netflix Pick</h1>
+  <p>Here the list of my fav 5 netflix series </p>
+
+  <ol>
+    <li> DARK </li>
+    <li> Extra curricular </li>
+    <li> My Holo Love </li>
+    <li> My first-2 love </li>
+    <li> Mr Robot </li>
+  </ol>
+
+ </>,
   document.getElementById("root")
+
 );
-
-
-
-
-
