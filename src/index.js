@@ -10,9 +10,30 @@ const img4 ="https://picsum.photos/240/300";
 const links = "https://muktinathecom.netlify.app/";
 
 
+// .heading {
+//   font-family: "Josefin Sans", sans-serif;
+//   color: red;
+//   text-align: center;
+//   text-transform: capitalize;
+//   font-weight: bold;
+//   text-shadow: 0px 2px 4px #ffe9c5;
+//   margin: 70px 0;
+// }
+
+const heading = {
+  color : "red",
+  textTransform : "capitalize",
+  textAlign : "center",
+  fontWeight: "bold",
+  textShadow: "0px 2px 4px #ffe9c5",
+  margin: "70px 0",
+  fontFamily: '"Josefin Sans", sans-serif'
+
+};
+
 ReactDOM.render(
   <>
-  <h1 className="heading"> My name is {name} </h1>
+  <h1 style={heading}> My name is {name} </h1>
   <div className="img_div">
   <img src={img1} alt="lorem images" />
   <img src={img2} alt="lorem images" />
