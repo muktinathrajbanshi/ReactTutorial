@@ -4,13 +4,29 @@
   box-sizing: border-box;
 }
 
-.img_div {
-  display: flex;
-  justify-content: center;
+body {
+  background-color: rgb(19, 227, 227);
 }
 
-.img_div img {
-  width: 350px;
-  height: 300px;
-  padding: 20px;
+div {
+  width: 900px;
+  height: 105px;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 2px solid gainsboro;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+  margin: 300px 300px;
+  background: #fff;
+}
+
+div h1 {
+  font-size: 25px;
+  font-weight: bold;
+  color: rgba(152, 109, 109);
+  font-family: "Josefin Sans", sans-serif;
 }
