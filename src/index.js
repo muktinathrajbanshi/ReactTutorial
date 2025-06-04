@@ -1,11 +1,16 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import App from "./App";
-import "./index.css";
+import myfav, {favprog, myName, myNames} from "./App";
 
-ReactDOM.render (
-  <App />,
+ReactDOM.render(
+  <>
+    <ol>
+      <li>Muktinath</li>
+      <li> {myfav} </li>
+      <li> {favprog} </li>
+      <li>{myName()}</li>
+      <li>{myNames()}</li>
+    </ol>
+  </>,
   document.getElementById("root")
 );
-
-
