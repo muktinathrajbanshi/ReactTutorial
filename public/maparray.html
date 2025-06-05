@@ -1,0 +1,30 @@
+<p id="showdata"></p>
+
+<script>
+  const studentdata = [
+    {
+      id: 1,
+      name: "muktinath",
+      degree: "BCA",
+    },
+    {
+      id: 2,
+      name: "ram",
+      degree: "BCA",
+    },
+    {
+      id: 3,
+      name: "hari",
+      degree: "BCA",
+    },
+  ];
+
+  //   console.log(studentdata[1].name);
+
+  const newdata = studentdata.map((curval) => {
+    return `my name is ${curval.name}. Our highest degree is ${curval.degree}`;
+  });
+
+  console.log(newdata);
+  document.getElementById("showdata").innerHTML = newdata;
+</script>

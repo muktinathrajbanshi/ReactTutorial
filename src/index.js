@@ -10,7 +10,7 @@ import Sdata from "./Sdata";
 ReactDOM.render( 
   <>
     <h1 className="heading_style"> List of top 6 Netflix Series in 2020 </h1>
-    {Sdata.map((val, index, array) => {
+    {Sdata.map((val, index) => {
       console.log(index);
       return (
          <Card 
