@@ -29,6 +29,12 @@ const Sdata = [
         title: "Netflix Original Series",
         links: "https://www.netflix.com/in/title/80990668?source=35",
     },
+     {
+        sname: "Hustlers",
+        imgscr: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRK4cTcZ-wjOvNtM2qyEhzyoXSOdMZOs5mKbQ&s",
+        title: "Netflix Original Series",
+        links: "https://www.netflix.com/in/title/80990668?source=35",
+    },
 ];
 
 export default Sdata;
