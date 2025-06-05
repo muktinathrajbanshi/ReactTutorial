@@ -1,18 +1,18 @@
+import React from "react";
+import { add, sub, div, multi } from "./Calc";
 
-const youtuber = "techmukti";
-const favprog = "React js";
-
-export default youtuber;
-
-
-function myName() {
-    let name = "muktinathrajbanshi";
-    return name;
+function App() {
+    return (
+    <>
+        <ul>
+        <li>{add(40,4)} </li>
+        <li>{sub(30,3)} </li>
+        <li>{multi(10, 3)} </li>
+        <li>{div(30, 3)} </li>
+        </ul>
+    </>
+    );  
 }
 
-function myNames() {
-    let names = "ramjayjayram";
-    return names;
-}
-
-export {favprog, myName, myNames};
+export default App;
+  
