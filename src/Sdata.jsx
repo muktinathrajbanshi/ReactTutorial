@@ -29,4 +29,6 @@ const Sdata = [
         title: "Netflix Original Series",
         links: "https://www.netflix.com/in/title/80990668?source=35",
     },
-]
+];
+
+export default Sdata;
