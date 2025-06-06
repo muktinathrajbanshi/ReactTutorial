@@ -1,18 +1,25 @@
 import React from "react";
-import { add, sub, div, multi } from "./Calc";
+import Card from "./Cards";
+import Sdata from "./Sdata";
 
-function App() {
-    return (
-    <>
-        <ul>
-        <li>{add(40,4)} </li>
-        <li>{sub(30,3)} </li>
-        <li>{multi(10, 3)} </li>
-        <li>{div(30, 3)} </li>
-        </ul>
-    </>
-    );  
-}
+
+const App = () => ( 
+  <>
+    <h1 className="heading_style"> List of top 6 Netflix Series in 2020 </h1>
+    {Sdata.map((val, index) => {
+      console.log(index);
+      return (
+         <Card 
+          key={val.id}
+          imgsrc={val.imgscr}
+          title = {val.title}
+          sname = {val.sname}
+          link = {val.links}
+        />
+      );
+    })}
+  </>
+   
+);
 
 export default App;
-  
