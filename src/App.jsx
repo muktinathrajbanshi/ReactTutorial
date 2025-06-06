@@ -1,29 +1,24 @@
 import React from "react";
-import Card from "./Cards";
-import Sdata from "./Sdata";
-import Netflix from "./Netflix";
-import Amazon from "./Amazon";
+import SlotM from "./SlotMach";
 
-const favSeries = "netflix";
 
-// const FavS = () => {
-
-//     if(favSeries === "netflix") {
-//        return <Netflix />;
-//     }else {
-//         return <Amazon />
-//     }
-// }
-
-const App = () => ( 
-  <>
-    <h1 className="heading_style"> List of top 6 Netflix Series in 2020 </h1>
-    {/* <FavS /> */}
-
-    { (favSeries === "netflix")? <Netflix /> : <Amazon /> }
-
-  </>
-   
-);
+const App = () => {
+    return (
+        <>
+            <h1 className="heading_style"> 
+            🎰 Welcome to<span style = {{ fontWeight : "bold"}}> Slot machine game </span> 🎰 
+            </h1>
+            <div className="slotmachine">
+                <SlotM x="😄" y="😄" z="😄" />
+                <hr />
+                <SlotM x="😄" y="😍" z="😄" />
+                <hr />
+               <SlotM x="🍎" y="🍌" z="🍎" />
+               <hr />
+               <SlotM x="🐼" y="🐼" z="🐼" />
+            </div>
+        </>
+    );
+};
 
 export default App;

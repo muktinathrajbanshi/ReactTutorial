@@ -19,6 +19,31 @@
   margin-bottom: 30px;
 }
 
+.slot_inner h1 {
+  width: 220px;
+  height: 40px;
+  display: flex;
+  font-weight: 500;
+  font-size: 20px;
+  letter-spacing: 1px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 8px;
+}
+
+.slotmachine {
+  width: 20%;
+  height: 50vh;
+  border: 3px solid grey;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: auto;
+}
+
 .cards {
   width: 100%;
   height: auto;
