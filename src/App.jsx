@@ -4,22 +4,24 @@ import Sdata from "./Sdata";
 import Netflix from "./Netflix";
 import Amazon from "./Amazon";
 
-const favSeries = "amazon";
+const favSeries = "netflix";
 
-const FavS = () => {
+// const FavS = () => {
 
-
-    if(favSeries === "netflix") {
-       return <Netflix />;
-    }else {
-        return <Amazon />
-    }
-}
+//     if(favSeries === "netflix") {
+//        return <Netflix />;
+//     }else {
+//         return <Amazon />
+//     }
+// }
 
 const App = () => ( 
   <>
     <h1 className="heading_style"> List of top 6 Netflix Series in 2020 </h1>
-    <FavS />
+    {/* <FavS /> */}
+
+    { (favSeries === "netflix")? <Netflix /> : <Amazon /> }
+
   </>
    
 );
