@@ -27,6 +27,7 @@ button {
   -o-border-radius: 5px;
   text-transform: uppercase;
   cursor: pointer;
+  margin-top: 15px;
 }
 
 .heading_style {
