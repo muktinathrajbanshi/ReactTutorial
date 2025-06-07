@@ -1,21 +1,24 @@
 import React, { useState } from "react";
 
+
 const App = () => {
 
-    let newTime = new Date().toLocaleTimeString();
-    const [ctime, setCtime] = useState(newTime);
+    let time = new Date().toLocaleTimeString();
+
+    const [ctime, setCtime] = useState(time);
 
     const UpdateTime = () => {
-         newTime = new Date().toLocaleTimeString();
-         setCtime(newTime);
+        time = new Date().toLocaleTimeString();
+        setCtime(time);
     };
+
+    setInterval(UpdateTime,1000);
 
     return (
         <>
             <h1> {ctime} </h1>
-            <button onClick={UpdateTime}> get time </button>
         </>
     );
-};
+}
 
 export default App;
