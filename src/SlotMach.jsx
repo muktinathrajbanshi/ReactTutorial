@@ -1,7 +1,7 @@
 import React from "react";
 
 const SlotM = (props) => {
-    // let x = "😄";
+    // let x = "😄"; 
     // let y = "😄";
     // let z = "🎅";
 
