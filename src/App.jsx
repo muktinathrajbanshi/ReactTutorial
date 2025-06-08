@@ -7,6 +7,7 @@ const App = () => {
         lname: "",
         email: "",
         phone: "",
+        qua : "",
     });
     
     const inputEvent = (event) => {
@@ -16,40 +17,47 @@ const App = () => {
         // const value = event.target.value;
         // const name = event.target.name;
 
-        const {value, name} = event.target;
+        const {name, value} = event.target;
 
         setFullName((preValue) => {
-        // console.log(preValue);
-        if(name === "fName") {
-           return {
-            fname: value,
-            lname: preValue.lname,
-            email: preValue.email,
-            phone: preValue.phone,
-
-           }; 
-        } else if(name === "lName") {
-           return {
-            fname: preValue.fname,
-            lname: value,
-            email: preValue.email,
-            phone: preValue.phone,
-           }; 
-        } else if(name === "email") {
-           return {
-            fname: preValue.fname,
-            lname: preValue.lname,
-            email: value,
-            phone: preValue.phone,
-             }; 
-        }else if(name === "phone") {
-           return {
-            fname: preValue.fname,
-            lname: preValue.lname,
-            email: preValue.email,
-            phone: value,
-           }; 
+        console.log(preValue);
+        
+        return {
+            ...preValue,
+            [name] : value,
         }
+
+
+        // if(name === "fName") {
+        //    return {
+        //     fname: value,
+        //     lname: preValue.lname,
+        //     email: preValue.email,
+        //     phone: preValue.phone,
+
+        //    }; 
+        // } else if(name === "lName") {
+        //    return {
+        //     fname: preValue.fname,
+        //     lname: value,
+        //     email: preValue.email,
+        //     phone: preValue.phone,
+        //    }; 
+        // } else if(name === "email") {
+        //    return {
+        //     fname: preValue.fname,
+        //     lname: preValue.lname,
+        //     email: value,
+        //     phone: preValue.phone,
+        //      }; 
+        // }else if(name === "phone") {
+        //    return {
+        //     fname: preValue.fname,
+        //     lname: preValue.lname,
+        //     email: preValue.email,
+        //     phone: value,
+        //    }; 
+        // }
         });
 
     };
@@ -68,10 +76,11 @@ const App = () => {
                 <h1> Hello {fullName.fname} {fullName.lname} </h1>
                 <p> {fullName.email} </p>
                 <p> {fullName.phone} </p>
+                <p> {fullName.qua} </p>
                 <input
                  type="text" 
                  placeholder="Enter Your Name" 
-                 name="fName"
+                 name="fname"
                  onChange={inputEvent}
                  value={fullName.fname}
                   />
@@ -79,7 +88,7 @@ const App = () => {
                 <input
                  type="text" 
                  placeholder="Enter Your Last Name" 
-                 name="lName"
+                 name="lname"
                  onChange={inputEvent}
                  value={fullName.lname}
                   />
@@ -97,6 +106,13 @@ const App = () => {
                  name="phone"
                  onChange={inputEvent}
                  value={fullName.phone}
+                  />
+                  <input
+                 type="text" 
+                 placeholder="Enter Your Qualification" 
+                 name="qua"
+                 onChange={inputEvent}
+                 value={fullName.qua}
                   />
                 <button type="submit"> Submit Me 👍 </button>
             </div>
