@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-
+import AddIcon from '@material-ui/icons/Add';
+import DeleteIcon from '@material-ui/icons/Delete';
 
 const ToDoLists = () => {
 
@@ -24,8 +25,12 @@ const ToDoLists = () => {
         <div className="center_div">
           <h1> {num} </h1>
           <div className="btn_div">
-            <button onClick={incNum}> Increment </button>
-            <button onClick={decNum}> Decrement </button>
+            <button onClick={incNum}>
+            <AddIcon /> 
+            </button>
+            <button onClick={decNum}> 
+            <DeleteIcon />
+             </button>
           </div>
         </div>
       </div>
