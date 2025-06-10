@@ -1,27 +1,31 @@
 import React from "react";
-import Button from '@material-ui/core/Button';
-import AddIcon from '@material-ui/icons/Add';
+import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 
 const ToDoLists = () => {
-
-   return (
+   return(
       <>
-         <div className="main_div">
-            <div className="center_div">
-               <br />
-               <h1> To Do List </h1>
-               <br />
-               <input type="text" 
-               placeholder="Add an Items"
-                />
-                <Button className="newBtn">
-                  <AddIcon />
-                </Button>
-            </div>
-         </div>
+         <h1> Welcome to my Page </h1>
+         <button className="btn btn-success"> MuktinathTech </button>
+
+<form>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
+    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1" />
+  </div>
+  <div class="form-group form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+         
       </>
    );
-
 };
 
 export default ToDoLists;
