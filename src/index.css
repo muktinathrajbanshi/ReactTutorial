@@ -9,7 +9,7 @@
   width: 100%;
   height: 85px;
   line-height: 85px;
-  background-color: orange;
+  background-color: #f9ca24;
   display: flex;
   justify-content: left;
   align-items: left;
@@ -22,8 +22,9 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: bisque;
+  background-color: transparent;
   position: fixed;
+  margin-top: 300px;
 }
 
 .main_note {
@@ -41,6 +42,31 @@ footer {
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
+  position: relative;
+}
+
+.fa-undo {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1abc9c;
+  width: 18px;
+  height: 18px;
+  color: #fff;
+  margin-left: 375px;
+  margin-bottom: -85px;
+  font-size: 12px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
 }
 
 form {
@@ -97,14 +123,14 @@ button:hover {
   background-color: #f9ca24 !important;
 }
 
-.plus_sign {
-  font-size: 45px !important;
-  font-weight: bold !important;
+.deleteIcon:hover {
+  cursor: pointer;
 }
 
 .note {
   width: 14.5%;
   height: auto;
+  float: left;
   display: flex;
   flex-direction: column;
   justify-content: center;

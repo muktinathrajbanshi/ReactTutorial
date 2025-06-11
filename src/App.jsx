@@ -16,11 +16,30 @@ const App = () => {
         console.log(note);
     };
 
+    const onDelete = (id) => {
+        setAddItem((oldData) => 
+            oldData.filter((currData, indx) => {
+                return indx !== id;
+            })
+        );
+    };
+
+
     return(
         <>
        <Header />
        <CreateNote passNote = {addNote}/>
-       <Note />
+
+        {addItem.map((val, index) => {
+            return <Note
+                key={index}
+                id={index}
+                title={val.title}
+                content={val.content}
+                deleteItem = {onDelete}
+             />
+        })}
+
        <Footer />
         </>
     );
