@@ -29,7 +29,7 @@ footer {
 .main_note {
   width: 30%;
   height: 30vh;
-  margin: 80px 60px 50px 550px;
+  margin: 40px 60px 50px 550px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -83,7 +83,7 @@ button {
   margin-right: -387px !important;
   font-weight: bold !important;
   font-size: 120px !important;
-  color: yellow !important;
+  color: #f0932b !important;
   background-color: #fff !important;
   border-radius: 50% !important;
   -webkit-border-radius: 50% !important;
@@ -93,7 +93,51 @@ button {
 }
 
 button:hover {
-  font-size: 50px !important;
   color: #fff !important;
-  background-color: yellow !important;
+  background-color: #f9ca24 !important;
+}
+
+.plus_sign {
+  font-size: 45px !important;
+  font-weight: bold !important;
+}
+
+.note {
+  width: 14.5%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  padding-left: 15px;
+  margin: 15px;
+  box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.note h1 {
+  font-size: 16px;
+  margin-top: 6px;
+}
+
+.note p {
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.note .btn {
+  border: none !important;
+  background-color: transparent !important;
+  margin-left: 150px !important;
+  margin-bottom: 5px !important;
+}
+
+.btn:hover {
+  background-color: #f9ca24 !important;
+  color: #fff !important;
 }
