@@ -1,11 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-import ToDoLists from "./ToDoLists";
+import App from "./App";
 
 ReactDOM.render( 
   
-    <ToDoLists />,
+    <App />,
   
   document.getElementById("root")
 );
