@@ -4,3 +4,9 @@
   box-sizing: border-box;
   /* background-color: #d2dbdd; */
 }
+
+button {
+  margin: 50px;
+  width: 90px;
+  height: 50px;
+}
