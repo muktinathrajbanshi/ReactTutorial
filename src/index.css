@@ -5,12 +5,7 @@
   /* background-color: #d2dbdd; */
 }
 
-select {
-  margin: 50px 0 0 30px;
-  width: 70px;
-  height: 20px;
-}
-
-h1 {
-  margin: 25px;
+a.acitve_class {
+  color: yellow;
+  border-bottom: 1px solid red;
 }
