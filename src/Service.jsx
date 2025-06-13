@@ -1,12 +1,12 @@
 import React from "react";
 
 
-const Services = () => {
+const Service = (props) => {
     return (
         <>
-            <h1> Hello, I am Services page </h1>
+            <h1> Hello, I am {props.name} page </h1>
         </>
     );
 };
 
-export default Services;
+export default Service;

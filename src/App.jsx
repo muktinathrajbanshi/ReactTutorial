@@ -14,8 +14,8 @@ const App = () => {
         <>
         <Menu />
         <Switch>
-            <Route exact path="/" component={About} />
-            <Route exact path="/service" component={Service} />
+            <Route exact path="/" component={ () => <About name="About" /> } />
+            <Route exact path="/service" render={ () => <Service name="Service" /> } />
             <Route exact path="/contact" component={Contact} /> 
             <Route component={Error} />
         </Switch>

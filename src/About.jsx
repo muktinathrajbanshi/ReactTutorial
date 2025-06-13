@@ -1,10 +1,10 @@
 import React from "react";
 
 
-const About = () => {
+const About = (props) => {
     return (
         <>
-            <h1> Hello, I am about page </h1>
+            <h1> Hello, I am {props.name} page </h1>
         </>
     );
 };
