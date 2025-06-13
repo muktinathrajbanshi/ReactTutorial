@@ -5,6 +5,7 @@ import Contact from "./Contact";
 import Error from "./Error";
 import Menu from "./Menu";
 import Service from "./Service";
+import User from "./User";
 
 
 const App = () => {
@@ -16,6 +17,7 @@ const App = () => {
         <Switch>
             <Route exact path="/" component={ () => <About name="About" /> } />
             <Route exact path="/service" render={ () => <Service name="Service" /> } />
+            <Route path="/user/:name/:lname" component={User} />
             <Route exact path="/contact" component={Contact} /> 
             <Route component={Error} />
         </Switch>
