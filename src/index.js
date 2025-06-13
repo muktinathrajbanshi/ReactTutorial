@@ -1,11 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-import ComA from "./ComA";
-
+import App from "./App";
 ReactDOM.render( 
   
-    <ComA />,
+    <App />,
   
   document.getElementById("root")
 );
