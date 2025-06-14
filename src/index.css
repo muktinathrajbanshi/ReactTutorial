@@ -37,3 +37,34 @@ p {
 button {
   margin: 30px;
 }
+
+input {
+  margin: 70px 500px 500px 600px;
+  width: 25%;
+  height: 45px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+  border: none;
+  outline: none;
+  font-size: 18px;
+  padding-left: 1cqb;
+}
+
+.image_style {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: -470px;
+}
+
+.image_style img {
+  width: 550px !important;
+  height: 350px !important;
+  margin-top: 10px !important;
+  padding-left: 50px !important;
+}

@@ -6,6 +6,7 @@ import Error from "./Error";
 import Menu from "./Menu";
 import Service from "./Service";
 import User from "./User";
+import Search from "./Search";
 
 
 const App = () => {
@@ -17,6 +18,7 @@ const App = () => {
         <Switch>
             <Route exact path="/" component={ () => <About name="About" /> } />
             <Route exact path="/service" render={ () => <Service name="Service" /> } />
+            <Route exact path="/search" component={Search} />    
             <Route path="/user/:name/:lname" component={User} />
             <Route exact path="/contact" component={Contact} /> 
             <Route component={Error} />
