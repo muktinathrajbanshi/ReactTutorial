@@ -68,3 +68,15 @@ input {
   margin-top: 10px !important;
   padding-left: 50px !important;
 }
+
+.musibat {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 250px;
+}
+
+.musibat p {
+  margin-top: 3px !important;
+}
