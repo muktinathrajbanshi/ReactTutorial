@@ -28,3 +28,11 @@ a {
 .navlink .active_class {
   color: #fff;
 }
+
+p {
+  margin: 30px;
+}
+
+button {
+  margin: 30px;
+}
