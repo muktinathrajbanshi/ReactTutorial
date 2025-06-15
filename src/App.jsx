@@ -1,12 +1,5 @@
 import React from "react";
-import { Route, Switch, Redirect } from "react-router-dom";
-import About from "./About";
-import Contact from "./Contact";
-import Error from "./Error";
-import Menu from "./Menu";
-import Service from "./Service";
-import User from "./User";
-import Search from "./Search";
+import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 
 
 const App = () => {
@@ -14,17 +7,20 @@ const App = () => {
 
     return(
         <>
-        <Menu />
-        <Switch>
-            <Route exact path="/" component={ () => <About name="About" /> } />
-            <Route exact path="/service" render={ () => <Service name="Service" /> } />
-            <Route exact path="/search" component={Search} />    
-            <Route path="/user/:name/:lname" component={User} />
-            <Route exact path="/contact" component={Contact} /> 
-            {/* <Route component={Error} /> */}
-            <Redirect to="/" />
-
-        </Switch>
+        <div className="container ">
+           <h1 className="text-center"> Welcome Back Muktinath </h1>
+           <br />
+           <div className="text-center">
+           <div class="card" style={{width: "18rem" }}>
+            <img src="https://picsum.photos/seed/picsum/200/150" class="card-img-top" alt="..." />
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="https://www.youtube.com/@muktinathrajbanshi219" target="_blank" class="btn btn-outline-success">Go somewhere</a>
+            </div>
+            </div>
+           </div>
+        </div>
 
         </>
     );
