@@ -1,6 +1,33 @@
-import React from "react";
+import React, { useState } from "react";
 
 const Contact = () => {
+
+  const [data, setData] = useState({
+    fullname: "",
+    phone: "",
+    email: "",
+    msg: "",
+  });
+
+  const InputEvent = (event) => {
+    const {name, value} = event.target;
+
+    setData((preVal) => {
+      return {
+        ...preVal,
+        [name] : value,
+      };
+    });
+
+  };
+
+const formSubmit = (e) => {
+  e.preventDefault();
+  alert(
+    `My name is ${data.fullname}. My mobile number is ${data.phone} and email is ${data.email}, Here is what I want to say ${data.msg}`
+  );
+};
+
   return (
     <>
       <div className="my-5">
@@ -9,22 +36,22 @@ const Contact = () => {
       <div className="container contact_div">
         <div className="row">
           <div className="col-md-6 col-12">
-            <form>
+            <form onSubmit={formSubmit}>
               <div className="mb-3">
                 <label htmlFor="name" className="form-label">Full Name</label>
-                <input type="text" className="form-control" id="name" placeholder="Enter your name" />
+                <input type="text" className="form-control" id="name" name="fullname" value={data.fullname} onChange={InputEvent} placeholder="Enter your name" />
               </div>
               <div className="mb-3">
                 <label htmlFor="phone" className="form-label">Phone</label>
-                <input type="tel" className="form-control" id="phone" placeholder="Enter your mobile number" />
+                <input type="tel" className="form-control" id="phone" name="phone" value={data.phone} onChange={InputEvent} placeholder="Enter your mobile number" />
               </div>
               <div className="mb-3">
                 <label htmlFor="email" className="form-label">Email Address</label>
-                <input type="email" className="form-control" id="email" placeholder="name@example.com" />
+                <input type="email" className="form-control" id="email" name="email" value={data.email} onChange={InputEvent} placeholder="name@example.com" />
               </div>
               <div className="mb-3">
                 <label htmlFor="message" className="form-label">Message</label>
-                <textarea className="form-control" id="message" rows="3" placeholder="Write your message here..."></textarea>
+                <textarea className="form-control" id="message" rows="3" name="msg" value={data.msg} onChange={InputEvent} placeholder="Write your message here..."></textarea>
               </div>
               <div className="col-12">
                 <button type="submit" className="btn btn-outline-primary">Submit</button>
