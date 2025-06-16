@@ -164,4 +164,10 @@ footer p {
   .navbar a {
     font-size: 26px !important;
   }
+  .navbar-toggler {
+    font-size: 14px !important;
+  }
+  #navbarSupportedContent .nav-link {
+    font-size: 19px !important;
+  }
 }
