@@ -1,5 +1,6 @@
 {
   "name": "reactapplication",
+  "homepage": "https://muktinathrajbanshi.github.io/ReactTutorial",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -7,7 +8,7 @@
     "@material-ui/icons": "^4.9.1",
     "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.6.3",
-    "@testing-library/react": "^16.3.0",
+    "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^13.5.0",
     "axios": "^0.19.2",
     "bootstrap": "^5.0.1",
@@ -15,10 +16,12 @@
     "react-digital-clock": "^0.1.2",
     "react-dom": "^16.13.1",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "^5.0.1",
+    "react-scripts": "4.0.3",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -41,5 +44,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "node-sass": "^9.0.0"
   }
 }

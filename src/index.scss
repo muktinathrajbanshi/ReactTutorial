@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Flamenco:wght@300;400&family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Jost:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Piazzolla:ital,opsz,wght@0,8..30,100..900;1,8..30,100..900&display=swap");
+@import "../src/sass/variables.scss";
 
 * {
   margin: 0;
@@ -9,26 +10,28 @@
 
 .navbar {
   background-color: #fff !important;
+ 
+    .navbar-brand {
+      font-size: 1.9rem !important;
+      color: $brand-clr !important;
+    }
+
+    & a {
+      font-size: 1.3rem;
+      text-transform: capitalize;
+    }
+
+    .menu_active {
+      font-weight: bold;
+      border-bottom: 1px solid $brand-clr;
+    }
+
+    & a:hover {
+      color: #3498db !important;
+    }
+
 }
 
-.navbar-brand {
-  font-size: 1.9rem !important;
-  color: #565387 !important;
-}
-
-.navbar a {
-  font-size: 1.3rem;
-  text-transform: capitalize;
-}
-
-.menu_active {
-  font-weight: bold;
-  border-bottom: 1px solid #565387;
-}
-
-.navbar a:hover {
-  color: #3498db !important;
-}
 
 /* .img_fluid {
   width: 25%;
@@ -169,5 +172,16 @@ footer p {
   }
   #navbarSupportedContent .nav-link {
     font-size: 19px !important;
+    width: 80px;
+  }
+
+  .navbar-collapse .collapse {
+    transition: height 0.5s ease !important;
+    overflow: hidden !important;
+    -webkit-transition: height 0.5s ease !important;
+    -moz-transition: height 0.5s ease !important;
+    -ms-transition: height 0.5s ease !important;
+    -o-transition: height 0.5s ease !important;
+    -webkit-transition: height 0.5s ease !important;
   }
 }
